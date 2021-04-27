@@ -20,7 +20,7 @@ waitTime = 0.3
 
 class Im(object):
     def __init__(self, secret):
-        dict_config(json.loads(base64.decodestring(secret)))
+        dict_config(json.loads(base64.b64decode(secret)))
 
     @staticmethod
     def getTokenByThirdUID(third_uid, a_id, user_name='', sex=SexTypeUnknown, portrait_uri='', user_email='',

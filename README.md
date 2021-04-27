@@ -43,10 +43,10 @@ def main():
     third_uid = "test-py-tob"
     a_id = "test"
     r = im.getTokenByThirdUID(third_uid, a_id, user_name='test-py', sex=linkv_sdk.SexTypeUnknown,
-                              portrait_uri='http://meet.linkv.sg/app/rank-list/static/img/defaultavatar.cd935fdb.png')
+                              portrait_uri='http://xxxxxx/app/rank-list/static/img/defaultavatar.cd935fdb.png')
 
     if not r['status']:
-        print('live.GetTokenByThirdUID(%s)' % r['error'])
+        print('im.getTokenByThirdUID(%s)' % r['error'])
         return
 
     print('im_token:%s im_open_id:%s' % (r['im_token'], r['im_open_id']))
